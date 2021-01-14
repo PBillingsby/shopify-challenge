@@ -10,10 +10,7 @@ class Form extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    let name = {
-      name: this.state.filmName
-    };
-    this.props.fetchFilms(name);
+    this.props.fetchFilms({ name: this.state.filmName });
   };
 
   handleChange = event => {

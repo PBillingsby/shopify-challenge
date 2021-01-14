@@ -12,7 +12,11 @@ const StoreFilms = props => {
             </div>
             <p>{film.Title}</p>
             <p>{film.Year}</p>
-            <button>Nominate</button>
+            <input
+              type="button"
+              onClick={() => handleNomination(film)}
+              value="Nominate"
+            />
           </div>
         ))}
       </div>
@@ -20,6 +24,12 @@ const StoreFilms = props => {
   } else {
     return <div>No films found</div>;
   }
+};
+
+const handleNomination = film => {
+  return dispatch => {
+    dispatch({ type: "ADD_NOMINATION", payload: film });
+  };
 };
 
 export default StoreFilms;

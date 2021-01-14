@@ -8,6 +8,9 @@ const filmReducer = (
   switch (action.type) {
     case "GET_FILMS":
       return { ...state, films: [...state.films, action.payload] };
+    case "ADD_NOMINATION":
+      debugger;
+      return { ...state, nominations: [...state.nominations, action.payload] };
     case "DELETE_FILM":
       return {
         ...state,
