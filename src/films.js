@@ -1,7 +1,7 @@
 export const fetchFilms = query => {
   return dispatch => {
     return fetch(
-      `http://www.omdbapi.com/?s=${query.name
+      `https://www.omdbapi.com/?s=${query.name
         .split(" ")
         .join("+")}&apikey=a0d2ebb9`
     )
