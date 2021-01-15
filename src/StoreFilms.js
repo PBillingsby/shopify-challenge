@@ -11,7 +11,7 @@ const StoreFilms = props => {
       </div>
     );
   } else {
-    return <div className="mt-2">Search for results</div>;
+    return <h4 className="mt-2">Search for results</h4>;
   }
 };
 

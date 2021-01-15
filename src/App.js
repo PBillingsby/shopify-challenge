@@ -41,7 +41,7 @@ class App extends React.Component {
               <div className="col m-2 border w-75 border-dark">
                 <StoreFilms {...this.props} />
               </div>
-              <div className="col-sm m-2 w-25 border border-dark">
+              <div className="col-sm pt-1 m-2 w-25 border border-dark">
                 <Nominations {...this.props} />
               </div>
             </div>
