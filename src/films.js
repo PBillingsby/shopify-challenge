@@ -21,3 +21,7 @@ export const addNomination = film => {
 export const removeNomination = film => {
   return { type: "REMOVE_NOMINATION", payload: film };
 };
+
+export const startOver = () => {
+  return { type: "START_OVER" };
+};

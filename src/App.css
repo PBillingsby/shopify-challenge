@@ -7,7 +7,10 @@
   pointer-events: none;
 }
 body {
-  background-color: rgba(194, 194, 194, 0.1);
+  background-color: rgba(122, 122, 122, 0.1);
+}
+a:hover {
+  text-decoration: none;
 }
 #results {
   max-height: 60vh;
@@ -18,8 +21,35 @@ input[type="button"] {
   color: red;
 }
 
+.nomination-text {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 710px;
+  position: relative;
+  background: rgb(80, 80, 80);
+  background: rgba(85, 85, 85, 0.7);
+  border-radius: 5px;
+}
+h1 {
+  letter-spacing: 10px;
+  font-size: 4.5em;
+}
+.jumbotron h4 {
+  text-shadow: -0.5px 0 rgb(1, 102, 6), 0 0.75px rgb(1, 102, 6), 0.75px 0 white,
+    0 -0.5px white;
+}
+.jumbotron h1 {
+  text-shadow: -1px 0 rgb(1, 102, 6), 0 1.5px rgb(1, 102, 6), 1.5px 0 white,
+    0 -1px white;
+}
+
+.jumbotron-text {
+  color: green;
+}
+
 .jumbotron {
-  background-color: rgb(1, 189, 1);
+  background-image: url("https://lh3.googleusercontent.com/proxy/wMnhGL-gifBeaQNkZzPBiOW2clKj8TYU3Hx78Qp63-310VZ1E0xFCYoijNFY_tmYs5KvVarakMQHoCSe3t_AHzWd7lG1n1E");
 }
 
 @media (prefers-reduced-motion: no-preference) {

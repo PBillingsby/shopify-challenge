@@ -1,6 +1,7 @@
 import React from "react";
 import NominationButton from "./NominationButton";
-const Card = props => {
+
+export const Card = props => {
   const film = props.film;
   return (
     <div

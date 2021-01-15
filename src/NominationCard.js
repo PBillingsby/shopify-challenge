@@ -6,12 +6,9 @@ const NominationCard = props => {
     <li className="list-group-item">
       <span className="d-inline-flex">
         <h5>{film.Title}</h5>
-        <input
-          type="button"
-          class="close ml-2"
-          onClick={() => props.removeNomination(film)}
-          value="&times;"
-        />
+        <a href="#" class="pl-2" onClick={() => props.removeNomination(film)}>
+          &times;
+        </a>
       </span>
     </li>
   );

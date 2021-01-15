@@ -20,10 +20,11 @@ const filmReducer = (
           film => film.Title !== action.payload.Title
         )
       };
-    case "DELETE_FILM":
+    case "START_OVER":
       return {
         ...state,
-        films: state.films.filter(film => film.id !== action.payload)
+        films: [],
+        nominations: []
       };
     default:
       return state;
