@@ -2,7 +2,7 @@
   "name": "shopify_challenge",
   "version": "0.1.0",
   "engines": {
-    "npm": "6.x"
+    "node": "12.x"
   },
   "private": true,
   "dependencies": {
