@@ -15,7 +15,7 @@ class App extends React.Component {
           <div class="jumbotron">
             <div class="nomination-text">
               <h1 class="nomination-h1 jumbotron-text">
-                NOMINATIONS SUBMITTED!
+                NOMINATIONS SUBMITTED!!!
               </h1>
               <ul className="list-group w-50 mx-auto">
                 {this.props.nominations.map(nomination => (
