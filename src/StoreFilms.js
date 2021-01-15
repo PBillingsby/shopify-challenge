@@ -15,10 +15,4 @@ const StoreFilms = props => {
   }
 };
 
-// const handleNomination = film => {
-//   return dispatch => {
-//     dispatch({ type: "ADD_NOMINATION", payload: film });
-//   };
-// };
-
 export default StoreFilms;

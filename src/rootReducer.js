@@ -1,3 +1,4 @@
+const initialState = {};
 const filmReducer = (
   state = {
     films: [],
@@ -7,22 +8,15 @@ const filmReducer = (
 ) => {
   switch (action.type) {
     case "GET_FILMS":
-      return { ...state, films: [...state.films, action.payload] };
+      return { ...state, films: [action.payload] };
     case "ADD_NOMINATION":
       return { ...state, nominations: [...state.nominations, action.payload] };
     case "REMOVE_NOMINATION":
       return {
         ...state,
         nominations: state.nominations.filter(
-          film => film.Title !== action.payload.title
+          film => film.Title !== action.payload.Title
         )
-      };
-    case "CLEAR_FILMS":
-      return {
-        ...state,
-        films: [
-          ...state.films.filter(film => film.Title != action.payload.Title)
-        ]
       };
     case "DELETE_FILM":
       return {
