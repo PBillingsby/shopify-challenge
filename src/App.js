@@ -11,6 +11,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App container mx-auto">
+        {this.props.nominations.length === 5 ? (
+          <div class="jumbotron">
+            <h1>NOMINATIONS SUBMITTED!</h1>
+          </div>
+        ) : (
+          <p></p>
+        )}
         Find Film
         <Form {...this.props} />
         <div className="mx-auto m-4 pt-3 row">
