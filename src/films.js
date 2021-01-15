@@ -11,3 +11,7 @@ export const fetchFilms = query => {
       });
   };
 };
+
+export const addNomination = film => {
+  return { type: "ADD_NOMINATION", payload: film };
+};

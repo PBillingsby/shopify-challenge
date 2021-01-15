@@ -1,7 +1,7 @@
 const filmReducer = (
   state = {
     films: [],
-    nominated: []
+    nominations: []
   },
   action
 ) => {
@@ -9,7 +9,6 @@ const filmReducer = (
     case "GET_FILMS":
       return { ...state, films: [...state.films, action.payload] };
     case "ADD_NOMINATION":
-      debugger;
       return { ...state, nominations: [...state.nominations, action.payload] };
     case "DELETE_FILM":
       return {
