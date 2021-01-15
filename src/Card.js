@@ -1,13 +1,25 @@
 import React from "react";
 import NominationButton from "./NominationButton";
 const Card = props => {
+  const film = props.film;
   return (
-    <div className="card border border-dark p-3 mt-2 ">
-      <div className="card-img-top">
-        <img src={props.film[0].Poster} />
-      </div>
+    <div
+      className="card border border-dark p-1 m-2 mx-auto"
+      style={{ width: "25rem", height: "35rem" }}
+    >
+      {film.Poster !== "N/A" && (
+        <img
+          className="card-img-top mx-auto"
+          style={{ width: "50%" }}
+          src={film.Poster}
+        />
+      )}
       <span className="d-inline">
-        <h4>{props.film[0].Title}</h4> - <p>{props.film[0].Year}</p>
+        <h4>{film.Title}</h4>
+        <ul style={{ listStyle: "none", paddingLeft: "0" }}>
+          <li>Release date: {film.Year}</li>
+          <li>Runtime: {film.Runtime}</li>
+        </ul>
       </span>
       <NominationButton {...props} />
     </div>

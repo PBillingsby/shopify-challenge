@@ -18,7 +18,7 @@ class App extends React.Component {
         ) : (
           <p></p>
         )}
-        Find Film
+        <h3>Film Finder</h3>
         <Form {...this.props} />
         <div className="mx-auto m-4 pt-3 row">
           <div className="col m-2 border w-75 border-dark">

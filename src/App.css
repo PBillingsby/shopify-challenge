@@ -6,14 +6,20 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+body {
+  background-color: rgba(194, 194, 194, 0.1);
+}
+#results {
+  max-height: 60vh;
+  overflow: scroll;
+}
 input[type="button"] {
   height: 5vh;
   color: red;
 }
 
 .jumbotron {
-  background-color: red;
+  background-color: rgb(1, 189, 1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
