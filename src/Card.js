@@ -1,17 +1,16 @@
 import React from "react";
 
 const Card = props => {
-  debugger;
   return (
     <div className="card border border-dark mt-2 ">
       <div className="card-img-top">
-        <img src={film.Poster} />
+        <img src={props.film.Poster} />
       </div>
-      <p>{film.Title}</p>
-      <p>{film.Year}</p>
+      <p>{props.film.Title}</p>
+      <p>{props.film.Year}</p>
       <input
         type="button"
-        onClick={() => props.addNomination(film)}
+        onClick={() => props.addNomination(props.film)}
         value="Nominate"
       />
     </div>

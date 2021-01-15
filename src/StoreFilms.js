@@ -6,7 +6,7 @@ const StoreFilms = props => {
     return (
       <div>
         {films.map(film => (
-          <Card {...film} />
+          <Card {...props} film={film} />
         ))}
       </div>
     );
