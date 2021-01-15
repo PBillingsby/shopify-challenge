@@ -4,8 +4,8 @@ const Card = props => {
   const film = props.film;
   return (
     <div
-      className="card border border-dark p-1 m-2 mx-auto"
-      style={{ width: "25rem", height: "35rem" }}
+      className="card border border-dark p-1 m-2 mx-auto align-items-stretch"
+      style={{ width: "25rem", maxHeight: "35rem" }}
     >
       {film.Poster !== "N/A" && (
         <img
