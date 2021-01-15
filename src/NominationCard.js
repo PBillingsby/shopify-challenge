@@ -1,12 +1,13 @@
 import React from "react";
 
 const NominationCard = props => {
+  const film = props.film;
   return (
-    <li>
-      <p>{props.film.Title}</p>
+    <li className="list-group-item">
+      <p>{film.Title}</p>
       <input
         type="button"
-        onClick={() => props.removeNomination(props.film)}
+        onClick={() => props.removeNomination(film)}
         value="Remove"
       />
     </li>

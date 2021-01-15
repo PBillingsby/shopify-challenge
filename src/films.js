@@ -6,8 +6,8 @@ export const fetchFilms = query => {
         .join("+")}&apikey=a0d2ebb9`
     )
       .then(resp => resp.json())
-      .then(films => {
-        dispatch({ type: "GET_FILMS", payload: films });
+      .then(film => {
+        dispatch({ type: "GET_FILMS", payload: film });
       });
   };
 };

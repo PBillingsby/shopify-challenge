@@ -3,11 +3,12 @@ import React from "react";
 const NominationButton = props => {
   const filterNomination = film => {
     if (!props.nominations.some(nom => nom === film)) {
-      props.addNomination(film);
+      props.addNomination(...film);
     }
   };
-
-  if (!props.nominations.some(nom => nom === props.film)) {
+  console.log("noms", props.nominations);
+  console.log("Film", props.film[0]);
+  if (!props.nominations.some(nom => nom === props.film[0])) {
     return (
       <input
         type="button"

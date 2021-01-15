@@ -1,14 +1,13 @@
-const initialState = {};
 const filmReducer = (
   state = {
-    films: [],
+    film: "",
     nominations: []
   },
   action
 ) => {
   switch (action.type) {
     case "GET_FILMS":
-      return { ...state, films: [action.payload] };
+      return { ...state, film: [action.payload] };
     case "ADD_NOMINATION":
       return { ...state, nominations: [...state.nominations, action.payload] };
     case "REMOVE_NOMINATION":

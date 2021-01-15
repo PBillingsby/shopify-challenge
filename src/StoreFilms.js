@@ -1,17 +1,14 @@
 import React from "react";
 import Card from "./Card";
 const StoreFilms = props => {
-  let films = props.films;
-  if (films.length > 0) {
+  if (props.film.length > 0) {
     return (
       <div>
-        {films.map(film => (
-          <Card {...props} film={film} />
-        ))}
+        <Card {...props} film={props.film} />
       </div>
     );
   } else {
-    return <div className="mt-2">Type film name to search</div>;
+    return <div className="mt-2">No Results</div>;
   }
 };
 

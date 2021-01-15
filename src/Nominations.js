@@ -3,8 +3,8 @@ import NominationCard from "./NominationCard";
 const Nominations = props => {
   return (
     <div>
-      Nominations: {props.nominations.length}
-      <ul>
+      <h4 className="text-center">Nominations: {props.nominations.length}</h4>
+      <ul className="list-group">
         {props.nominations.map(nomination => {
           return <NominationCard {...props} film={nomination} />;
         })}
