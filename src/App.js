@@ -10,7 +10,7 @@ import "./App.css";
 class App extends React.Component {
   render() {
     return (
-      <div className="App container pt-1 mx-auto">
+      <div className="App container mt-5 pt-1 mx-auto">
         {this.props.nominations.length === 5 ? (
           <div class="jumbotron">
             <div class="nomination-text">
