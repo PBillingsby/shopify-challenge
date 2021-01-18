@@ -4,7 +4,7 @@ const StoreFilms = props => {
   if (props.films.length > 0) {
     return (
       <div id="results">
-        <h4 className="text-center">Results</h4>
+        <h4 className="text-center">Results: {props.films.length}</h4>
         {props.films.map(film => {
           return <Card {...props} film={film} />;
         })}

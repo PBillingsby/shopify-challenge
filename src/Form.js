@@ -11,6 +11,7 @@ class Form extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.fetchFilms({ name: this.state.filmName });
+    this.setState({ filmName: "" });
   };
 
   handleChange = event => {
@@ -28,6 +29,7 @@ class Form extends Component {
             onChange={this.handleChange}
             name="filmName"
             placeholder="Film Name"
+            value={this.state.filmName}
           />
           <input type="submit" />
         </form>
