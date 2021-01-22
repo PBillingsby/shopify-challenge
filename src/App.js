@@ -12,8 +12,8 @@ class App extends React.Component {
     return (
       <div className="App container mt-5 pt-1 mx-auto">
         {this.props.nominations.length === 5 ? (
-          <div class="jumbotron">
-            <div class="nomination-text">
+          <div class="jumbotron border border-dark">
+            <div class="nomination-text border border-dark">
               <h1 class="nomination-h1 jumbotron-text">
                 NOMINATIONS SUBMITTED!!!
               </h1>
@@ -30,7 +30,7 @@ class App extends React.Component {
                   </li>
                 ))}
               </ul>
-              <button onClick={this.props.startOver}>Start over</button>
+              <button onClick={this.props.startOver}>Start Over</button>
             </div>
           </div>
         ) : (
@@ -38,10 +38,10 @@ class App extends React.Component {
             <h3>Film Finder</h3>
             <Form {...this.props} />
             <div className="mx-auto m-4 pt-3 row">
-              <div className="col m-2 border w-75 border-dark">
+              <div className="col m-2 w-75 border rounded border-dark">
                 <StoreFilms {...this.props} />
               </div>
-              <div className="col-sm pt-1 m-2 w-25 border border-dark">
+              <div className="col-sm pt-1 m-2 w-25 border rounded border-dark">
                 <Nominations {...this.props} />
               </div>
             </div>

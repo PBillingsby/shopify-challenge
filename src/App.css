@@ -62,7 +62,9 @@ h1 {
 .jumbotron {
   background-image: url("https://lh3.googleusercontent.com/proxy/wMnhGL-gifBeaQNkZzPBiOW2clKj8TYU3Hx78Qp63-310VZ1E0xFCYoijNFY_tmYs5KvVarakMQHoCSe3t_AHzWd7lG1n1E");
 }
-
+.bg-grey {
+  background-color: rgb(182, 182, 182);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
