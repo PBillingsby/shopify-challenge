@@ -6,7 +6,7 @@ const StoreFilms = props => {
       <div id="results">
         <h4 className="text-center">Results: {props.films.length}</h4>
         {props.films.map(film => {
-          return <Card {...props} film={film} />;
+          return <Card key={film.name} {...props} film={film} />;
         })}
       </div>
     );

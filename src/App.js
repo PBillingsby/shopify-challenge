@@ -35,11 +35,11 @@ class App extends React.Component {
           </div>
         ) : (
           <div>
-            <h3>Film Finder</h3>
+            <h2>Film Finder</h2>
             <Form {...this.props} />
             <div className="mx-auto m-4 pt-3 row">
               <div className="col m-2 w-75 border rounded border-dark">
-                <StoreFilms {...this.props} />
+                <StoreFilms key={this.props.name} {...this.props} />
               </div>
               <div className="col-sm pt-1 m-2 w-25 border rounded border-dark">
                 <Nominations {...this.props} />
